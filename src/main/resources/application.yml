@@ -1,0 +1,14 @@
+server:
+  port: 8100
+  servlet:
+    context-path: /front
+
+spring:
+  datasource:
+    url: jdbc:h2:mem:tempDb
+    driverClassName: org.h2.Driver
+    username: username
+    password: password
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    defer-datasource-initialization: true
